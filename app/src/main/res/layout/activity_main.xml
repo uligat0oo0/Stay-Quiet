@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="8dp">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -35,27 +35,27 @@
             app:srcCompat="@drawable/logo" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_below="@+id/imageView4"
             android:layout_marginTop="35dp"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="Correo Electronico"
             android:textColor="#696969"
-            android:layout_below="@+id/imageView4"
-            android:layout_alignEnd="@+id/imageView4" />
+            tools:text="Correo Electronico" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_below="@+id/etEmail"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Contrasenia"
             android:textColor="#696969"
-            android:layout_below="@+id/editText"
-            android:layout_alignStart="@+id/imageView4" />
+            tools:text="12345678" />
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -65,8 +65,8 @@
             android:text="Recordar contrasenia"
             android:textColor="#696969"
             android:textColorLink="#0077C7"
-            android:layout_below="@+id/editText2"
-            android:layout_alignEnd="@+id/editText2" />
+            android:layout_below="@+id/etPass"
+            android:layout_alignEnd="@+id/etPass" />
 
         <Button
             android:id="@+id/button5"
@@ -87,7 +87,7 @@
             android:background="#000000"
             android:text="Olvidaste la contrasena"
             android:textColor="#FFFFFF"
-            android:layout_below="@+id/button4"
+            android:layout_below="@+id/btnLogin"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp" />
 
