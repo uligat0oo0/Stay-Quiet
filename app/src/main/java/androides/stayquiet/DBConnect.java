@@ -35,13 +35,23 @@ public class DBConnect extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(CREATE_USER_TABLE);
-        addUser("Fernando", "user1@email.com", "pass1");
+        addDefaultUser("Fernando", "user1@email.com", "pass1", sqLiteDatabase);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL(DROP_USER_TABLE);
         onCreate(sqLiteDatabase);
+    }
+
+    public void addDefaultUser(String name, String email, String pass, SQLiteDatabase db) {
+        ContentValues values = new ContentValues();
+
+        values.put(COLUMN_USER_NAME, name);
+        values.put(COLUMN_USER_EMAIL, email);
+        values.put(COLUMN_USER_PASSWORD, pass);
+
+        db.insert(TABLE_USER, null, values);
     }
 
     public void addUser(String name, String email, String pass) {
@@ -60,9 +70,23 @@ public class DBConnect extends SQLiteOpenHelper {
         String[] columns = { COLUMN_USER_ID };
         String[] selectionArgs = { email, pass };
         String selection = COLUMN_USER_EMAIL + " = ? AND " + COLUMN_USER_PASSWORD + " = ?";
-        int countResult;
+        int countResult = 1;
+        Cursor queryResult;
+        SQLiteDatabase db = this.getWritableDatabase();
 
-        if (1 > 0){
+        queryResult = db.query(TABLE_USER, columns, selection, selectionArgs,
+                null, null, null);
+        //queryResult = db.rawQuery("select " + COLUMN_USER_ID +
+        //        " from " + TABLE_USER +
+        //        " where " + COLUMN_USER_EMAIL + " = '" + email + "'" +
+        //        " and " + COLUMN_USER_PASSWORD + " = '" + pass + "'", null);
+        //queryResult = db.rawQuery("SELECT * FROM user", null);
+        countResult = queryResult.getCount();
+
+        queryResult.close();
+        db.close();
+
+        if (countResult > 0){
             return true;
         }
 
