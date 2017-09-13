@@ -1,0 +1,76 @@
+﻿PARA MANIANA
+
+
+
+
+
+Diagrama de flujos de datos
+DFD
+DR
+CRC
+Casos de USO
+
+BPMN
+UML
+
+Diagrama de clases
+Diagrama de secuencia
+
+Arquitecturas
+Cliente servidor, 3 capaz, MVC.
+
+Principios de Disenio: Guia general sobre el disenio estructural que si no se respeta (independientemente del contexto) causara problemas.
+
+Patrones de disenio: Una solucion a un problema recurrente general(reutilizable) y depende de un contexto, solucion no trivial.
+
+Buenas practicas: Regla facilmente practicable que contribuye al orden, comunicacion y mantenibilidad,(comprensibilidad).
+
+Cohesion: Es una grado, que mide la identificacion de un modulo con una entidad o funcion especifica tu codigo.
+
+Acoplamiento: Grado que mide la depedencia entre modulos es recomendable un bajo acoplamiento.
+Que es un modulo!!!!!
+
+como medir el acoplamiento?
+como medir la cohesion?
+
+ALTA - ACEPTABLE
+Funcional
+Secuencial
+Comunicacion+
+Procedural
+
+BAJA INACEPTABLE
+Temporal
+Logica
+Coincidental
+
+BAJO ACEPTAB
+Acomplamiento de datos
+Acomplamiento de control
+
+ALTO INACEPTABLE
+Acoplamiento exerno
+Acoplamiento patologico
+
+
+
+Casos de uso del LOGIN
+Diagrama de secuencia
+Diagrama de clases
+Codigo
+
+
+
+
+
+
+ExAMEN 20 sep
+
+* IS definiciones objetivos
+* Analisis, disenio, documento de anilisis
+* Rusuario,RSsistema,RF,RNF, Requerimientos de negocio, requeriminetos de informacion y principales propiedades de software
+* arquitecturas, Cliente servidor, 3 capaz
+* metodologias cascada, spiral, SCRUM, RUP, XP, MobileD
+
+Investigacion: Que es el contextawase?
+Ejemplos de 3 aplicaciones que la usan
