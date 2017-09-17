@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLogin;
+    Button btnLogin,btnRegister;
     EditText email, pass;
     DBConnect db;
 
@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         email = (EditText) findViewById(R.id.etEmail);
         pass = (EditText) findViewById(R.id.etPass);
         btnLogin = (Button)findViewById(R.id.btnLogin);
+        btnRegister =(Button)findViewById(R.id.btnRegister);
         final Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        final Intent userRegister = new Intent(MainActivity.this,UserRgister.class);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 pass.setText("");
+            }
+        });
+
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(userRegister);
             }
         });
     }
