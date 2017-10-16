@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="androides.stayquiet.MainActivity">
+    tools:context="androides.stayquiet.LoginActivity">
 
     <RelativeLayout
         android:layout_width="344dp"
@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="8dp">
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnLogin_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -35,27 +35,31 @@
             app:srcCompat="@drawable/logo" />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etLogin_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/imageView4"
             android:layout_below="@+id/imageView4"
             android:layout_marginTop="35dp"
             android:ems="10"
+            android:hint="Correo Electronico"
+            android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
-            android:textColor="#696969"
-            tools:text="Correo Electronico" />
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/etPass"
+            android:id="@+id/etLogin_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/imageView4"
-            android:layout_below="@+id/etEmail"
+            android:layout_below="@+id/etLogin_email"
             android:ems="10"
+            android:hint="********"
+            android:imeOptions="actionDone"
             android:inputType="textPassword"
-            android:textColor="#696969"
-            tools:text="12345678" />
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/darker_gray"/>
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -65,20 +69,20 @@
             android:text="Recordar contrasenia"
             android:textColor="#696969"
             android:textColorLink="#0077C7"
-            android:layout_below="@+id/etPass"
-            android:layout_alignEnd="@+id/etPass" />
+            android:layout_below="@+id/etLogin_password"
+            android:layout_alignEnd="@+id/etLogin_password" />
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnLogin_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/button7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
             android:background="#000000"
             android:text="REGISTRATE"
             android:textColor="#0077C7"
-            android:textSize="24sp"
-            android:layout_below="@+id/button7"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="26dp" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button7"
@@ -87,7 +91,7 @@
             android:background="#000000"
             android:text="Olvidaste la contrasena"
             android:textColor="#FFFFFF"
-            android:layout_below="@+id/btnLogin"
+            android:layout_below="@+id/btnLogin_login"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp" />
 

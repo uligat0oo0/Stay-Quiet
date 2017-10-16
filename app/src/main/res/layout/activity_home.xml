@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="androides.stayquiet.Main2Activity"
+    tools:context="androides.stayquiet.HomeActivity"
     android:background="#000000">
 
     <RelativeLayout
@@ -24,21 +24,6 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            android:text="Salas Hernandez Abiran
-    abisaher@gmail.com"
-            android:textColor="#FFFFFF"
-            android:textSize="11sp"
-            tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageView3" />
-
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
@@ -49,6 +34,28 @@
             android:layout_marginEnd="36dp"
             android:background="#000000"
             app:srcCompat="@drawable/add" />
+
+        <TextView
+            android:id="@+id/tvEmailMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:text="Email"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvNameMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:text="Name"
+            android:textColor="@android:color/background_light" />
 
 
     </RelativeLayout>

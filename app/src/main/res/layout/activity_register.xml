@@ -20,57 +20,57 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/etRegister_FirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:layout_weight="0.05"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Nombre"
+        android:inputType="textPersonName"
         android:textAlignment="textStart" />
 
     <EditText
-        android:id="@+id/lastName"
+        android:id="@+id/etRegister_LastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Apellidos" />
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_weight="0.05"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Email" />
-
-    <EditText
-        android:id="@+id/phone"
+        android:id="@+id/etRegister_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:layout_weight="0.05"
         android:ems="10"
-        android:inputType="phone"
-        android:hint="Numero celular" />
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/confPhone"
+        android:id="@+id/etRegister_phoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:layout_weight="0.05"
         android:ems="10"
-        android:inputType="phone"
-        android:hint="Repite Numero" />
+        android:hint="Numero celular"
+        android:inputType="phone" />
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/etRegister_phoneNumberConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_weight="0.05"
+        android:ems="10"
+        android:hint="Repite Numero"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etRegister_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
@@ -80,7 +80,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/confPass"
+        android:id="@+id/etRegister_passwordConf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
@@ -90,7 +90,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/saveUser"
+        android:id="@+id/btnRegister_save"
         android:layout_width="197dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
