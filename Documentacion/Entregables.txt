@@ -1,0 +1,6 @@
+El -C1- Proyect Charter (Casos de uso/ Diagramas de clases/ Diagramas de secuencia/codigo)
+El -C2- Propuesta Inicial (Concluido)
+El -C3- Proyecto Ejecutivo (Concluido)
+El -C4- Demo (Concluido)
+El -c5- Presentación (App funcionando)
+
